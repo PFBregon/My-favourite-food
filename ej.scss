@@ -12,9 +12,13 @@ max-width: fit-content;
 }
 
 .banner {
-    max-width: fit-content;
-}
-
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+    margin: 0 auto; 
+  }
+  
 .numbers {
     background-color: gray;
     height: 10 px;
