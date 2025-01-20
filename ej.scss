@@ -12,36 +12,64 @@ body {
     object-fit: cover; 
     margin: 0 auto; 
     align-items: center;
-  }
+}
   
 .numbers {
     background-color: gray;
     height: 10 px;
     width: 10px;
     border: 1px solid;
+    grid-row: span 2;
 }
 
-.ingredientes {
-    display: flex;          
+.ingredientes, .tiempo {
+    display: flex-column;          
     justify-content: center; 
-    gap: 20px;           
+    gap: 20px;  
+}         
   
 .columna {
-      display: flex;
-      flex-direction: column; 
-      gap: 10px;            
-    }
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;            
+}
   
-label {     
-      display: flex;         
-      align-items: center; 
-      gap: 8px;   
-}           
+.checkbox {     
+    display: flex;         
+    align-items: center; 
+    gap: 8px;
+}      
+
+.Titular {
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.footer {
+    display: flex, space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.RRSS {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+    gap: 30px;   
+ }           
   
-input[type="checkbox"] {
-      width: 16px;
-      height: 16px;
-      cursor: pointer;       
+.tiempo {
+    img {
+        width: 50px;  // Ajusta el tamaño de las imágenes
+        height: auto;
     }
 }
   

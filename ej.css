@@ -15,23 +15,48 @@ body {
   background-color: gray;
   height: 10 px;
   width: 10px;
-  border: 1px solid; }
+  border: 1px solid;
+  grid-row: span 2; }
 
-.ingredientes {
-  display: flex;
+.ingredientes, .tiempo {
+  display: flex-column;
   justify-content: center;
   gap: 20px; }
-  .ingredientes .columna {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; }
-  .ingredientes label {
-    display: flex;
-    align-items: center;
-    gap: 8px; }
-  .ingredientes input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    cursor: pointer; }
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px; }
+
+.Titular {
+  font-size: 24px;
+  margin-bottom: 10px;
+  align-items: center; }
+
+.footer {
+  display: flex, space-between;
+  align-items: flex-start;
+  gap: 20px; }
+
+.RRSS {
+  display: flex;
+  align-items: center;
+  gap: 20px; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px; }
+
+.tiempo img {
+  width: 50px;
+  height: auto; }
 
 /*# sourceMappingURL=ej.css.map */
