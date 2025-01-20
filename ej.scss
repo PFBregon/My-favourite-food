@@ -1,0 +1,23 @@
+@mixin max-width($max-width: 800px) {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+body {
+background-color: wheat;
+font-family: Roboto;
+max-width: fit-content;
+}
+
+.banner {
+    max-width: fit-content;
+}
+
+.numbers {
+    background-color: gray;
+    height: 10 px;
+    width: 10px;
+    border: 1px solid;
+}
